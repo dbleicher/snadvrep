@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="content_block_programmatic">
+    <content_block_programmatic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <condition/>
+        <conditional>false</conditional>
+        <frame/>
+        <logged_on>false</logged_on>
+        <name>AdvWelcomeContent</name>
+        <programmatic_content><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<style>
+		.jumbotron {
+			background-color:#e4e4e4;
+		}
+	</style>
+	
+<div class="jumbotron text-center">
+  <h1>Advanced Reporting in ServiceNow</h1>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Make it Work</h3>
+      <p>First things first...</p>
+		<p>
+			In this chapter, we'll focus on getting a "something" working.  It may not be 
+			great (or even good), but before we try to learn anything advanced, let's be sure
+			we can get the basics <u><i>working</i></u>.
+		</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Make it Right</h3>
+		<p>
+			Once we have something that "works", let's consider the many ways in which
+			what we've created is, well, just plain <b>wrong</b>.
+		</p>
+		<p>
+			In any attempt to get
+			something working, quickly, there will be a good chance that what we end up
+			with is a bit of a mess.  Our report may appear unresponsive (slow), the code
+			may be hard to maintain and extend, and it might easily place undue burdens
+			on the server or the client's network connection.  Let's fix that.
+		</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Make it Fast</h3>
+      <p>We might be able to skip this step...</p>
+		<p>
+			In most cases, once you've made your report "right" it will already
+			be fast, or at least, "fast enough".  If, on the other hand, the 
+			report is particularly complex, or the data queries take a bit too
+			long, there are some techniques we can use to speed things up.
+		</p>
+    </div>
+  </div>
+</div>
+
+
+</j:jelly>]]></programmatic_content>
+        <sys_class_name>content_block_programmatic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-09-10 12:04:03</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3ba6c55d4ffd62003eecb5e18110c725</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>AdvWelcomeContent</sys_name>
+        <sys_package display_value="AdvRep1" source="x_72701_advrep1">c04f78994ffd62003eecb5e18110c752</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AdvRep1">c04f78994ffd62003eecb5e18110c752</sys_scope>
+        <sys_update_name>content_block_programmatic_3ba6c55d4ffd62003eecb5e18110c725</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-09-10 13:56:42</sys_updated_on>
+        <two_phase>false</two_phase>
+    </content_block_programmatic>
+</record_update>

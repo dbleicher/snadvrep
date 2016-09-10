@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="content_page" unload_date="2016-09-10 14:01:33">
+    <sys_portal action="delete_multiple" query="page=fc2149d94ffd62003eecb5e18110c747">
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone20</dropzone>
+                <offset>0</offset>
+                <page display_value="Welcome to Advanced Reporting">fc2149d94ffd62003eecb5e18110c747</page>
+                <summary/>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2016-09-10 13:54:13</sys_created_on>
+                <sys_id>523061554f31a2003eecb5e18110c7b5</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2016-09-10 13:54:13</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 2016-09-10 06:54:13">523061554f31a2003eecb5e18110c7b5</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-10 13:54:13</sys_created_on>
+                        <sys_id>1a3061554f31a2003eecb5e18110c7b5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-10 13:54:13</sys_updated_on>
+                        <value>content_block_programmatic</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2016-09-10 06:54:13">523061554f31a2003eecb5e18110c7b5</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-10 13:54:13</sys_created_on>
+                        <sys_id>563061554f31a2003eecb5e18110c7b5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-10 13:54:13</sys_updated_on>
+                        <value>com.glide.cms.RenderBlock</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2016-09-10 06:54:13">523061554f31a2003eecb5e18110c7b5</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-10 13:54:13</sys_created_on>
+                        <sys_id>923061554f31a2003eecb5e18110c7b5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-10 13:54:13</sys_updated_on>
+                        <value>3ba6c55d4ffd62003eecb5e18110c725</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 2016-09-10 06:54:13">523061554f31a2003eecb5e18110c7b5</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-10 13:54:13</sys_created_on>
+                        <sys_id>9e3061554f31a2003eecb5e18110c7b5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-10 13:54:13</sys_updated_on>
+                        <value>fc2149d94ffd62003eecb5e18110c747</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2016-09-10 06:54:13">523061554f31a2003eecb5e18110c7b5</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-10 13:54:13</sys_created_on>
+                        <sys_id>da3061554f31a2003eecb5e18110c7b5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-10 13:54:13</sys_updated_on>
+                        <value>AdvWelcomeContent</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal>
+    <content_page action="INSERT_OR_UPDATE">
+        <content_site display_value="Advanced Reporting 1">49d0c5d94ffd62003eecb5e18110c7d4</content_site>
+        <content_theme/>
+        <description>This is the first ADV reporting page</description>
+        <frame_buster>false</frame_buster>
+        <layout/>
+        <model_id/>
+        <model_table/>
+        <name>Welcome</name>
+        <order/>
+        <parent_page/>
+        <read_roles/>
+        <roles/>
+        <selectable>true</selectable>
+        <sys_class_name>content_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-09-10 11:39:13</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fc2149d94ffd62003eecb5e18110c747</sys_id>
+        <sys_mod_count>47</sys_mod_count>
+        <sys_name>Welcome</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AdvRep1" source="x_72701_advrep1">c04f78994ffd62003eecb5e18110c752</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AdvRep1">c04f78994ffd62003eecb5e18110c752</sys_scope>
+        <sys_update_name>content_page_fc2149d94ffd62003eecb5e18110c747</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-09-10 13:54:13</sys_updated_on>
+        <title>Welcome to Advanced Reporting</title>
+        <url_suffix>welcome</url_suffix>
+        <user/>
+        <view/>
+        <workflow_state>published</workflow_state>
+    </content_page>
+</record_update>
