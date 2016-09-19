@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="content_block_programmatic">
+    <content_block_programmatic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <condition/>
+        <conditional>false</conditional>
+        <frame/>
+        <logged_on>false</logged_on>
+        <name>AR1 Incident Priority Treemap</name>
+        <programmatic_content><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<script src="https://code.highcharts.com/4.1.9/modules/treemap.js"></script>
+
+	<style>
+		#ar1IPTMChart {
+			min-width: 240px;
+			max-width: 600px;
+			height: 100%;
+			margin: 0 auto;
+		}
+	</style>
+
+	<div id="ar1IPTMChart"></div>
+	
+	<script type="text/javascript">
+		var ar1IPTM;
+		
+		ar1IPTM = new Highcharts.Chart({
+			chart: {
+				type: 'treemap',
+				renderTo: 'ar1IPTMChart',
+			},
+			colorAxis: {
+				minColor: '#FFFFFF',
+				maxColor: '#800000'
+			},
+			exporting: {
+				buttons: {
+					contextButton: {
+						enabled: false
+					}    
+				}
+			},
+			credits: false,
+			series: [{
+				type: 'treemap',
+				layoutAlgorithm: 'squarified',
+				data: [{
+					name: 'Database',
+					value: 1,
+					colorValue: 1
+				}, {
+					name: 'Hardware',
+					value: 4,
+					colorValue: 2
+				}, {
+					name: 'Inquiry / Help',
+					value: 8,
+					colorValue: 3
+				}, {
+					name: 'Network',
+					value: 4,
+					colorValue: 2
+				}, {
+					name: 'Software',
+					value: 7,
+					colorValue: 4
+				}
+				]
+			}],
+			title: {
+				text: 'Open Incidents by Category &amp; Priority'
+			}
+		});
+	</script>
+	
+</j:jelly>]]></programmatic_content>
+        <sys_class_name>content_block_programmatic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-09-18 12:33:43</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>4b3a123f4fb926003eecb5e18110c7d6</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>AR1 Incident Priority Treemap</sys_name>
+        <sys_package display_value="AdvRep1" source="x_72701_advrep1">c04f78994ffd62003eecb5e18110c752</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AdvRep1">c04f78994ffd62003eecb5e18110c752</sys_scope>
+        <sys_update_name>content_block_programmatic_4b3a123f4fb926003eecb5e18110c7d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-09-19 13:00:30</sys_updated_on>
+        <two_phase>false</two_phase>
+    </content_block_programmatic>
+</record_update>

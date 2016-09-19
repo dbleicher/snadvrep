@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="content_block_programmatic">
+    <content_block_programmatic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <condition/>
+        <conditional>false</conditional>
+        <frame/>
+        <logged_on>false</logged_on>
+        <name>AR1 Incident Priority Semi</name>
+        <programmatic_content><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<style>
+		#ar1IPSChart {
+			min-width: 240px;
+			max-width: 600px;
+			height: 100%;
+			margin: 0 auto;
+		}
+	</style>
+	
+	<div id="ar1IPSChart"></div>
+	
+	<script type="text/javascript">
+		var ar1IPS;
+		
+		ar1IPS = new Highcharts.Chart({
+			chart: {
+				type: 'pie',
+				renderTo: 'ar1IPSChart',
+				plotBackgroundColor: null,
+				plotBorderWidth: 0,
+				plotShadow: false,
+			},
+			exporting: {
+				buttons: {
+					contextButton: {
+						enabled: false
+					}    
+				}
+			},
+			credits: false,
+			title: {
+				text: 'Open<br/>Incidents by<br/>Priority',
+				align: 'center',
+				verticalAlign: 'middle',
+				y: 40
+			},
+			tooltip: {
+				pointFormat: '<b>Count</b>: {point.y}<br/><b>Percent</b>: {point.percentage:.1f}%'
+			},
+			plotOptions: {
+				pie: {
+					dataLabels: {
+						distance: -50,
+						enabled: true,
+						style: {
+							fontWeight: 'bold',
+							color: 'white',
+							textShadow: '0px 1px 2px black'
+						}
+					},
+					startAngle: -90,
+					endAngle: 90,
+					center: ['50%', '75%']
+				}
+			},
+			series: [{
+				type: 'pie',
+				name: 'Priority',
+				innerSize: '50%',
+				colors: ['#800000', '#BF9999', '#E6BB12', '#000080'],
+				data: [
+					['Critical',  9],
+					['High',      4],
+					['Moderate',  2],
+					['Low',       2],
+				]
+			}]
+		});
+	</script>
+	
+</j:jelly>]]></programmatic_content>
+        <sys_class_name>content_block_programmatic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-09-18 13:35:49</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>4b98223f4fb926003eecb5e18110c7e3</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>AR1 Incident Priority Semi</sys_name>
+        <sys_package display_value="AdvRep1" source="x_72701_advrep1">c04f78994ffd62003eecb5e18110c752</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AdvRep1">c04f78994ffd62003eecb5e18110c752</sys_scope>
+        <sys_update_name>content_block_programmatic_4b98223f4fb926003eecb5e18110c7e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-09-18 16:42:07</sys_updated_on>
+        <two_phase>false</two_phase>
+    </content_block_programmatic>
+</record_update>

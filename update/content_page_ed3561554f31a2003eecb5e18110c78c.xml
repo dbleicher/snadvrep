@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="content_page" unload_date="2016-09-19 13:18:57">
+    <sys_portal action="delete_multiple" query="page=ed3561554f31a2003eecb5e18110c78c"/>
+    <content_page action="INSERT_OR_UPDATE">
+        <content_site display_value="Advanced Reporting 1">49d0c5d94ffd62003eecb5e18110c7d4</content_site>
+        <content_theme/>
+        <description>A brief overview of the need (or lack thereof) for advanced reporting.</description>
+        <frame_buster>false</frame_buster>
+        <layout/>
+        <model_id/>
+        <model_table/>
+        <name>MIW - Overview</name>
+        <order/>
+        <parent_page/>
+        <read_roles/>
+        <roles/>
+        <selectable>true</selectable>
+        <sys_class_name>content_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-09-10 14:17:45</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ed3561554f31a2003eecb5e18110c78c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MIW - Overview</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AdvRep1" source="x_72701_advrep1">c04f78994ffd62003eecb5e18110c752</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AdvRep1">c04f78994ffd62003eecb5e18110c752</sys_scope>
+        <sys_update_name>content_page_ed3561554f31a2003eecb5e18110c78c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-09-10 14:17:45</sys_updated_on>
+        <title>Overview - Why Bother?</title>
+        <url_suffix>miwoverview</url_suffix>
+        <user/>
+        <view/>
+        <workflow_state>published</workflow_state>
+    </content_page>
+</record_update>
