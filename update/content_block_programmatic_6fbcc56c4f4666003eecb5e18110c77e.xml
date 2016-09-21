@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="content_block_programmatic">
+    <content_block_programmatic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <condition/>
+        <conditional>false</conditional>
+        <frame/>
+        <logged_on>false</logged_on>
+        <name>AR1 Open Problem Table</name>
+        <programmatic_content><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.flash.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.html5.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.2.1/css/buttons.dataTables.min.css" />
+
+	<style type="text/css">
+		tfoot input {
+			width: 100%;
+			padding: 3px;
+			box-sizing: border-box;
+		}
+		table.rankTable {
+			border-collapse: collapse;
+		}
+		table.rankTable td {
+			border: 1px solid black;
+			padding: 1px;
+			font-size: .8em;			
+		}
+		table.rankTable th {
+			border: 1px solid black;
+			padding: 1px;
+			font-size: .8em;
+			background-color:#31708F; 
+			color:#FFFFFF;
+		}
+
+		.LSL {
+			background-color:#00FFFFFF;
+		}
+
+		.CSL {
+			background-color:#DFDFDF;
+		}
+
+		#pending-table, #proposal-table, #submitted-table, #myactive-table {
+			font-size: .8em;
+		}
+
+		#pending-table th, #proposal-table th, #submitted-table th, #myactive-table th {
+			font-size: .82em;
+			background-color:#000060; 
+			color:#FFFFFF;
+		}
+
+		.paginate_button {
+			font-size: .8em;
+		}
+
+		hr.fader {
+			border: 0;
+			height: 1px;
+			background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		}
+	</style>
+	<div style="margin-left:15px; width:98%">
+		<h3 style="font-family:Lucida Grande; font-size:18px; text-align:center; margin-top:4px; margin-bottom:22px;">
+			Open Problems - Listing
+		</h3>
+		<table id="pending-table" class="table table-striped table-bordered compact" width="100%">
+			<tfoot>
+				<tr>
+					<td>ID</td>
+					<td>Opened</td>
+					<td>State</td>
+					<td>Description</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<script type="text/javascript">
+		var $j = jQuery.noConflict();
+		var rankData;
+		var openTable;
+		var loadingTable = [
+			["PRB0000007","2014-07-16 15:32:07","Open","Router Down"],
+			["PRB0000002","2014-07-16 15:35:29","Pending Change","2nd Floor File Server Short on Space"],
+			["PRB0000009","2014-07-16 15:54:00","Known Error","T-1 Saturated"],
+			["PRB0000010","2014-07-16 15:55:28","Open","Oracle Down"],
+			["PRB0000001","2015-12-28 15:48:36","Pending Change","Windows XP SP2 causing errors in Enterprise"],
+			["PRB0000008","2015-12-28 16:06:28","Open","Hang when trying to print VISIO document"],
+			["PRB0000003","2015-12-28 16:07:08","Open","Request for a Blackberry"],
+			["PRB0000005","2015-12-28 16:40:00","Open","Please remove this hotfix"],
+			["PRB0000004","2015-12-28 16:40:42","Known Error","Boot with shift key held down"],
+			["PRB0000006","2016-03-06 14:07:07","Known Error","Can't access SFA software"],
+			["PRB0000011","2016-09-03 21:58:15","Open","Unknown source of SAP outage"],
+		];
+
+		$j(document).ready(function() {
+			$j('#pending-table tfoot td').each( function () {
+				var title = $j(this).text();
+				$j(this).html( '<input type="text" placeholder=":'+title+'" />' );
+			} );
+
+			generateOpenTable(loadingTable);
+
+			// getRankData(false);
+		} );
+	
+		function displayPursuitRecord(id) {
+			var myURL = '/problem_list.do?sysparm_query=stateNOT%20IN4%5Enumber%3D' + id;
+			// 'stateNOT IN4^number=PRB0000007';
+			window.open(myURL, "_blank");		
+		}
+  
+		function getRankData(forceRefresh) {
+			if (forceRefresh) {
+				openTable.clear();
+				openTable.rows.add(loadingTable).draw();
+			}
+			var ga = new GlideAjax('PursuitSLRole');
+			ga.addParam('sysparm_name', 'generateSWIAssignmentsData');
+			ga.addParam('sysparm_jorx', "XML");
+			ga.addParam('sysparm_forcerefresh', forceRefresh);
+			ga.getXML(parseRankData); 
+		}
+		
+		function parseRankData(response) {
+			var mdd = response.responseXML.documentElement.getAttribute('answer');
+			rankData = JSON.parse(mdd);
+			// generateOpenTable(rankData);
+			openTable.clear();
+			openTable.rows.add(rankData).draw();
+		}
+
+		
+		//////////////////////////////
+		// Create the Open table //
+		//////////////////////////////
+		function generateOpenTable(tbOpenAll) {
+		
+		    openTable = $j('#pending-table').DataTable( {
+		        data: tbOpenAll,
+				"order": [[ 1, 'dsc' ]],
+				"lengthMenu": [ 10, 20, 50, 75, 100 ],
+				"pageLength": 10,
+		        dom: 'Blfrtip',
+				buttons: [
+					{
+						extend: 'excel',
+						exportOptions: { orthogonal: 'export' }
+					},
+					{
+						extend: 'pdf',
+						orientation: 'landscape',
+					},
+				],
+				columnDefs: [
+					{
+						"targets": [ 3 ],
+						"width": "45%"
+					},
+				],
+		        columns: [
+		            { title: "ID" },
+		            { title: "Opened" },
+		            { title: "State" },
+		            { title: "Description" },
+		        ]
+		    } );
+
+			// Apply the search
+			openTable.columns().every( function () {
+				var that = this;
+
+				$j( 'input', this.footer() ).on( 'keyup change', function () {
+					if ( that.search() !== this.value ) {
+						that
+							.search( this.value )
+							.draw();
+					}
+				} );
+			} );
+
+		
+			openTable.on( 'click', 'tr', function () {
+				try {
+					displayPursuitRecord(openTable.row( this ).data()[0]);
+				} catch (err) {
+					// console.log("Selection Failed: "+err);
+				}
+			
+			} );
+		}
+ </script>
+	
+</j:jelly>]]></programmatic_content>
+        <sys_class_name>content_block_programmatic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-09-20 14:49:51</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>6fbcc56c4f4666003eecb5e18110c77e</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>AR1 Open Problem Table</sys_name>
+        <sys_package display_value="AdvRep1" source="x_72701_advrep1">c04f78994ffd62003eecb5e18110c752</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AdvRep1">c04f78994ffd62003eecb5e18110c752</sys_scope>
+        <sys_update_name>content_block_programmatic_6fbcc56c4f4666003eecb5e18110c77e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-09-20 17:34:26</sys_updated_on>
+        <two_phase>false</two_phase>
+    </content_block_programmatic>
+</record_update>

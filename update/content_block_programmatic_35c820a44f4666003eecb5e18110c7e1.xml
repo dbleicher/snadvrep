@@ -20,7 +20,9 @@
 		}
 	</style>
 
-	<h3 style="font-family:Lucida Grande; font-size:18px; text-align:center; margin-top:4px; margin-bottom:22px;">Unassigned, Planned Changes</h3>
+	<h3 style="font-family:Lucida Grande; font-size:18px; text-align:center; margin-top:4px; margin-bottom:22px;">
+		Timeline of Unassigned Changes
+	</h3>
 	<div id="timeline"></div>
 	
 	<script type="text/javascript">
@@ -37,7 +39,7 @@
 			dataTable.addColumn({ type: 'date', id: 'Start' });
 			dataTable.addColumn({ type: 'date', id: 'End' });
 			dataTable.addRows([
-				[ 'CHG0000001', 'Rollback Oracle Version', new Date('2016-08-22'), new Date('2016-08-24') ],
+				[ 'CHG0000001', 'Rollback Oracle Version',        new Date('2016-08-22'), new Date('2016-08-24') ],
 				[ 'CHG0000004', 'Upgrade to Oracle 11i',          new Date('2016-08-23'), new Date('2016-08-24') ],
 				[ 'CHG0000008', 'Install new Cisco',              new Date('2016-08-28'), new Date('2016-08-30') ],
 				[ 'CHG0000006', 'Install 100 Gb drive in Svr 5',  new Date('2016-08-30'), new Date('2016-09-06') ],
@@ -45,7 +47,11 @@
 				[ 'CHG0030002', 'Apply critical security patch',  new Date('2016-09-26'), new Date('2016-09-30') ],
 			]);
 
-			chart.draw(dataTable);		
+		    var options = {
+			  timeline: { singleColor: '#000060' },
+			};
+		
+			chart.draw(dataTable, options);		
 		}
 	</script>
 </j:jelly>]]></programmatic_content>
@@ -54,7 +60,7 @@
         <sys_created_on>2016-09-20 12:12:58</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>35c820a44f4666003eecb5e18110c7e1</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>AR1 Unassigned Change Timeline</sys_name>
         <sys_package display_value="AdvRep1" source="x_72701_advrep1">c04f78994ffd62003eecb5e18110c752</sys_package>
         <sys_policy/>
@@ -62,7 +68,7 @@
         <sys_scope display_value="AdvRep1">c04f78994ffd62003eecb5e18110c752</sys_scope>
         <sys_update_name>content_block_programmatic_35c820a44f4666003eecb5e18110c7e1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-09-20 13:15:03</sys_updated_on>
+        <sys_updated_on>2016-09-20 17:34:50</sys_updated_on>
         <two_phase>false</two_phase>
     </content_block_programmatic>
 </record_update>
