@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="content_block_programmatic">
+    <content_block_programmatic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <condition/>
+        <conditional>false</conditional>
+        <frame/>
+        <logged_on>false</logged_on>
+        <name>AR2 Top 10 Oldest Open Problems </name>
+        <programmatic_content><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<div style="margin-right:15px; width:98%">
+		<h3 style="font-family:Lucida Grande; font-size:18px; text-align:center; margin-top:4px; margin-bottom:22px;">
+			Top 10 Oldest Open Problems
+		</h3>
+		<table id="pending-table" class="table table-striped table-bordered compact" width="100%">
+			<thead>
+				<tr>
+					<td>ID</td>
+					<td>Opened</td>
+					<td>State</td>
+					<td>Description</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr role="row" class="odd"><td>PRB0000007</td><td class="sorting_1">2014-07-16 15:32:07</td><td>Open</td><td>Router Down</td></tr>
+				<tr role="row" class="even"><td>PRB0000002</td><td class="sorting_1">2014-07-16 15:35:29</td><td>Pending Change</td><td>2nd Floor File Server Short on Space</td></tr>
+				<tr role="row" class="odd"><td>PRB0000009</td><td class="sorting_1">2014-07-16 15:54:00</td><td>Known Error</td><td>T-1 Saturated</td></tr>
+				<tr role="row" class="even"><td>PRB0000010</td><td class="sorting_1">2014-07-16 15:55:28</td><td>Open</td><td>Oracle Down</td></tr>
+				<tr role="row" class="odd"><td>PRB0000001</td><td class="sorting_1">2015-12-28 15:48:36</td><td>Pending Change</td><td>Windows XP SP2 causing errors in Enterprise</td></tr>
+				<tr role="row" class="even"><td>PRB0000008</td><td class="sorting_1">2015-12-28 16:06:28</td><td>Open</td><td>Hang when trying to print VISIO document</td></tr>
+				<tr role="row" class="odd"><td>PRB0000003</td><td class="sorting_1">2015-12-28 16:07:08</td><td>Open</td><td>Request for a Blackberry</td></tr>
+				<tr role="row" class="even"><td>PRB0000005</td><td class="sorting_1">2015-12-28 16:40:00</td><td>Open</td><td>Please remove this hotfix</td></tr>
+				<tr role="row" class="odd"><td>PRB0000004</td><td class="sorting_1">2015-12-28 16:40:42</td><td>Known Error</td><td>Boot with shift key held down</td></tr>
+				<tr role="row" class="even"><td>PRB0000006</td><td class="sorting_1">2016-03-06 14:07:07</td><td>Known Error</td><td>Can't access SFA software</td></tr>
+			</tbody>		
+		</table>
+	</div>
+
+</j:jelly>]]></programmatic_content>
+        <sys_class_name>content_block_programmatic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-09-24 14:59:07</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>cc7339f54fcaa6003eecb5e18110c7be</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>AR2 Top 10 Oldest Open Problems </sys_name>
+        <sys_package display_value="AdvRep1" source="x_72701_advrep1">c04f78994ffd62003eecb5e18110c752</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AdvRep1">c04f78994ffd62003eecb5e18110c752</sys_scope>
+        <sys_update_name>content_block_programmatic_cc7339f54fcaa6003eecb5e18110c7be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-09-24 15:03:04</sys_updated_on>
+        <two_phase>false</two_phase>
+    </content_block_programmatic>
+</record_update>

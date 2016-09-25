@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="content_page" unload_date="2016-09-25 13:59:57">
+    <sys_portal action="delete_multiple" query="page=f47ea1b54fcaa6003eecb5e18110c7cf">
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone2</dropzone>
+                <offset>0</offset>
+                <page display_value="Open Problems by Status Report">f47ea1b54fcaa6003eecb5e18110c7cf</page>
+                <summary/>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2016-09-24 14:59:56</sys_created_on>
+                <sys_id>1185f5f54fcaa6003eecb5e18110c7cb</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2016-09-24 14:59:56</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2016-09-24 07:59:56">1185f5f54fcaa6003eecb5e18110c7cb</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-24 14:59:56</sys_created_on>
+                        <sys_id>1585f5f54fcaa6003eecb5e18110c7cb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-24 14:59:56</sys_updated_on>
+                        <value>com.glide.cms.RenderBlock</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2016-09-24 07:59:56">1185f5f54fcaa6003eecb5e18110c7cb</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-24 14:59:56</sys_created_on>
+                        <sys_id>5185f5f54fcaa6003eecb5e18110c7cb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-24 14:59:56</sys_updated_on>
+                        <value>cc7339f54fcaa6003eecb5e18110c7be</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 2016-09-24 07:59:56">1185f5f54fcaa6003eecb5e18110c7cb</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-24 14:59:56</sys_created_on>
+                        <sys_id>5d85f5f54fcaa6003eecb5e18110c7cb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-24 14:59:56</sys_updated_on>
+                        <value>f47ea1b54fcaa6003eecb5e18110c7cf</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 2016-09-24 07:59:56">1185f5f54fcaa6003eecb5e18110c7cb</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-24 14:59:56</sys_created_on>
+                        <sys_id>9985f5f54fcaa6003eecb5e18110c7cb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-24 14:59:56</sys_updated_on>
+                        <value>content_block_programmatic</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2016-09-24 07:59:56">1185f5f54fcaa6003eecb5e18110c7cb</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-24 14:59:56</sys_created_on>
+                        <sys_id>d585f5f54fcaa6003eecb5e18110c7cb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-24 14:59:56</sys_updated_on>
+                        <value>AR2 Top 10 Oldest Open Problems </value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>0</offset>
+                <page display_value="Open Problems by Status Report">f47ea1b54fcaa6003eecb5e18110c7cf</page>
+                <summary/>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2016-09-24 14:59:56</sys_created_on>
+                <sys_id>d585f5f54fcaa6003eecb5e18110c7c9</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2016-09-24 14:59:56</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 2016-09-24 07:59:56">d585f5f54fcaa6003eecb5e18110c7c9</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-24 14:59:56</sys_created_on>
+                        <sys_id>1585f5f54fcaa6003eecb5e18110c7ca</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-24 14:59:56</sys_updated_on>
+                        <value>f47ea1b54fcaa6003eecb5e18110c7cf</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2016-09-24 07:59:56">d585f5f54fcaa6003eecb5e18110c7c9</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-24 14:59:55</sys_created_on>
+                        <sys_id>1985f5f54fcaa6003eecb5e18110c7c9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-24 14:59:55</sys_updated_on>
+                        <value>ada239f54fcaa6003eecb5e18110c753</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 2016-09-24 07:59:56">d585f5f54fcaa6003eecb5e18110c7c9</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-24 14:59:56</sys_created_on>
+                        <sys_id>5185f5f54fcaa6003eecb5e18110c7ca</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-24 14:59:56</sys_updated_on>
+                        <value>content_block_programmatic</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2016-09-24 07:59:56">d585f5f54fcaa6003eecb5e18110c7c9</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-24 14:59:56</sys_created_on>
+                        <sys_id>9d85f5f54fcaa6003eecb5e18110c7c9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-24 14:59:56</sys_updated_on>
+                        <value>AR2 Open Problems Pie</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2016-09-24 07:59:56">d585f5f54fcaa6003eecb5e18110c7c9</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2016-09-24 14:59:55</sys_created_on>
+                        <sys_id>d985f5f54fcaa6003eecb5e18110c7c9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2016-09-24 14:59:55</sys_updated_on>
+                        <value>com.glide.cms.RenderBlock</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal>
+    <content_page action="INSERT_OR_UPDATE">
+        <content_site display_value="ARD">49d0c5d94ffd62003eecb5e18110c7d4</content_site>
+        <content_theme/>
+        <description>A report containing a 3D pie chart of open problems by status on the left, and a table on the right that shows details for all open problems.</description>
+        <frame_buster>false</frame_buster>
+        <layout display_value="AR2 OpenProblemLayout">382035f14fcaa6003eecb5e18110c7ca</layout>
+        <model_id/>
+        <model_table/>
+        <name>Open Probems by Status</name>
+        <order/>
+        <parent_page/>
+        <read_roles/>
+        <roles/>
+        <selectable>true</selectable>
+        <sys_class_name>content_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-09-24 14:31:46</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f47ea1b54fcaa6003eecb5e18110c7cf</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Open Probems by Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AdvRep1" source="x_72701_advrep1">c04f78994ffd62003eecb5e18110c752</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AdvRep1">c04f78994ffd62003eecb5e18110c752</sys_scope>
+        <sys_update_name>content_page_f47ea1b54fcaa6003eecb5e18110c7cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-09-24 14:59:56</sys_updated_on>
+        <title>Open Problems by Status Report</title>
+        <url_suffix>opsr</url_suffix>
+        <user/>
+        <view/>
+        <workflow_state>published</workflow_state>
+    </content_page>
+</record_update>

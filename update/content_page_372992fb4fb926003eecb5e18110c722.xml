@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<record_update node_type="content_page" unload_date="2016-09-21 12:49:26">
+<record_update node_type="content_page" unload_date="2016-09-25 13:59:57">
     <sys_portal action="delete_multiple" query="page=372992fb4fb926003eecb5e18110c722">
         <related_items_node>
             <sys_portal action="INSERT_OR_UPDATE">
@@ -350,7 +350,7 @@
         </related_items_node>
     </sys_portal>
     <content_page action="INSERT_OR_UPDATE">
-        <content_site display_value="Advanced Reporting 1">49d0c5d94ffd62003eecb5e18110c7d4</content_site>
+        <content_site display_value="ARD">49d0c5d94ffd62003eecb5e18110c7d4</content_site>
         <content_theme/>
         <description/>
         <frame_buster>false</frame_buster>

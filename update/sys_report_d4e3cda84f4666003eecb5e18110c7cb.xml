@@ -19,7 +19,7 @@
         <chart_title_y_position>0</chart_title_y_position>
         <chart_width/>
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
-        <color_palette display_value="Blues dark to light (8)">57b94ba9d7100200b96d45a3ce61032d</color_palette>
+        <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
         <column>active</column>
         <compute_percent>aggregate</compute_percent>
@@ -34,9 +34,10 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>state</field>
         <field_list/>
-        <filter table="problem">stateNOT IN4^EQ^GROUPBYstate<item endquery="false" field="state" goto="false" newquery="false" operator="NOT IN" or="false" value="4"/>
+        <filter table="problem">stateNOT IN4^EQ^GROUPBYstate^TRENDBYactivity_due,year<item endquery="false" field="state" goto="false" newquery="false" operator="NOT IN" or="false" value="4"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
             <item endquery="false" field="" goto="false" newquery="false" operator="GROUPBY" or="false" value="state"/>
+            <item endquery="false" field="" goto="false" newquery="false" operator="TRENDBY" or="false" value="activity_due,year"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -49,9 +50,9 @@
         <legend_border_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</legend_border_color>
         <legend_border_radius>0</legend_border_radius>
         <legend_border_width>1</legend_border_width>
-        <legend_horizontal_alignment>left</legend_horizontal_alignment>
+        <legend_horizontal_alignment>center</legend_horizontal_alignment>
         <legend_items_left_align>false</legend_items_left_align>
-        <legend_vertical_alignment>middle</legend_vertical_alignment>
+        <legend_vertical_alignment>bottom</legend_vertical_alignment>
         <list_ui_view/>
         <location_field/>
         <lower_limit/>
@@ -87,7 +88,7 @@
         <sys_created_on>2016-09-20 14:10:38</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>d4e3cda84f4666003eecb5e18110c7cb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Bleicher - Open Problems by Status</sys_name>
         <sys_package display_value="AdvRep1" source="x_72701_advrep1">c04f78994ffd62003eecb5e18110c752</sys_package>
         <sys_policy/>
@@ -95,7 +96,7 @@
         <sys_scope display_value="AdvRep1">c04f78994ffd62003eecb5e18110c752</sys_scope>
         <sys_update_name>sys_report_d4e3cda84f4666003eecb5e18110c7cb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-09-20 14:10:38</sys_updated_on>
+        <sys_updated_on>2016-09-24 14:15:51</sys_updated_on>
         <table>problem</table>
         <title>Bleicher - Open Problems by Status</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
